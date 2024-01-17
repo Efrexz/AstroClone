@@ -1,0 +1,29 @@
+---
+import Logo from "./Logo.astro";
+import QuestionIcon from "./QuestionIcon.astro";
+import WorldIcon from "./WorldIcon.astro";
+import UserIcon from "./UserIcon.astro";
+---
+
+<header class="flex justify-between items-center px-10 py-4 w-full top-10">
+    <Logo />
+    <nav>
+        <ul
+            class="flex text-[13px] font-medium [&>li>a]:inline-block [&>li>a]:px-5"
+        >
+            <li><a href="#">Vehiculos</a></li>
+            <li><a href="#">Energia</a></li>
+            <li><a href="#">Carga</a></li>
+            <li><a href="#">Descubrir</a></li>
+            <li><a href="#">Tienda</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <ul class="flex gap-3">
+            <li><a href="#"><QuestionIcon /></a></li>
+            <li><a href="#"><WorldIcon /></a></li>
+            <li><a href="#"><UserIcon /></a></li>
+        </ul>
+    </nav>
+</header>

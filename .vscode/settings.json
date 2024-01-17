@@ -1,0 +1,6 @@
+{
+    "standard.enable": true,
+    "standard.run" : "onSave",
+    "editor.codeActionsOnSave": {
+    }
+}

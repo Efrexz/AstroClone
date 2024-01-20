@@ -5,11 +5,13 @@ import WorldIcon from "./WorldIcon.astro";
 import UserIcon from "./UserIcon.astro";
 ---
 
-<header class="flex justify-between items-center px-10 py-4 w-full top-10">
+<header
+    class="flex justify-between items-center px-9 py-9 w-full lg:top-4 text-white z-10 absolute"
+>
     <Logo />
     <nav>
         <ul
-            class="flex text-[13px] font-medium [&>li>a]:inline-block [&>li>a]:px-5"
+            class="flex text-[13px] font-medium [&>li>a]:inline-block [&>li>a]:px-3"
         >
             <li><a href="#">Vehiculos</a></li>
             <li><a href="#">Energia</a></li>
@@ -20,7 +22,7 @@ import UserIcon from "./UserIcon.astro";
     </nav>
 
     <nav>
-        <ul class="flex gap-3">
+        <ul class="flex [&>li>a]:inline-block [&>li>a]:px-1">
             <li><a href="#"><QuestionIcon /></a></li>
             <li><a href="#"><WorldIcon /></a></li>
             <li><a href="#"><UserIcon /></a></li>

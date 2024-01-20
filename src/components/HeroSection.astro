@@ -1,0 +1,18 @@
+---
+import Section from "./Section.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import TestHeader from "../components/TestHeader.astro";
+---
+
+<div class="h-screen w-screen overflow-hidden relative">
+    <TestHeader />
+    <LandingHeader />
+    <Section />
+    <video
+        src="/Homepage-Model-Y-Desktop-NA.mp4"
+        muted
+        autoplay
+        loop
+        class="object-cover h-full w-full"></video>
+    <footer></footer>
+</div>

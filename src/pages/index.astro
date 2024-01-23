@@ -4,5 +4,14 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Tesla" description="pagina de tesla">
-    <HeroSection />
+    <main
+        class="snap-mandatory snap-y h-screen w-screen overflow-y-auto overflow-x-hidden"
+    >
+        <div class="snap-center">
+            <HeroSection />
+        </div>
+        <div class="snap-center">
+            <HeroSection />
+        </div>
+    </main>
 </Layout>

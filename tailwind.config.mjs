@@ -5,7 +5,11 @@ export default {
 		fontFamily: {
 			sans: ['Gotham SSm A, sans-serif']
 		},
-		extend: {},
+		extend: {
+			colors: {
+				'grayTransparent': 'rgba(34, 34, 34, 0.65)',
+			}
+		},
 	},
 	plugins: [],
 }

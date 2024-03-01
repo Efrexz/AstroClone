@@ -6,7 +6,8 @@ import UserIcon from "./UserIcon.astro";
 ---
 
 <header
-    class="flex justify-between items-center px-9 py-9 w-full top-16 lg:top-6 md:top-9 sm:top-14 text-white z-20 absolute min-w-[640px]"
+    id="landing-header"
+    class="flex justify-between items-center px-9 py-9 w-full top-16 lg:top-6 md:top-9 sm:top-14 text-white z-20 absolute min-w-[640px] transition-colors duration-500"
 >
     <Logo />
     <nav>
@@ -29,3 +30,25 @@ import UserIcon from "./UserIcon.astro";
         </ul>
     </nav>
 </header>
+
+<script>
+    const $landingHeader = document.getElementById("landing-header");
+
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        thresholds: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const color = entry.target.getAttribute("data-header-color");
+                $landingHeader.style.color = color;
+            }
+        });
+    }, options);
+
+    const $sections = document.querySelectorAll(".landing-section");
+    $sections.forEach((entry) => observer.observe(entry));
+</script>

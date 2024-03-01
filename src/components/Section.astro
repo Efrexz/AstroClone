@@ -1,9 +1,10 @@
 ---
-const { title, subtitle, type, oneButton, lastSection } = Astro.props;
+const { title, subtitle, type, oneButton, lastSection, color } = Astro.props;
 ---
 
 <section
-    class="flex flex-col absolute mt-24 sm:mt-28 left-0 right-0 z-10 h-screen overflow-hidden"
+    class="landing-section flex flex-col absolute mt-24 sm:mt-28 left-0 right-0 z-10 h-screen overflow-hidden"
+    data-header-color={color}
 >
     <div class="flex items-center flex-col">
         <h2
